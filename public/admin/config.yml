@@ -11,13 +11,12 @@ media_library:
 
 collections:
   - name: "data" # Used in routes, e.g., /admin/collections/blog
-    label: "data" # Used in the UI
+    label: "Data" # Used in the UI
     files:
-      - label: "cv"
+      - label: "CV"
         name: "cv"
         file: "data/cv.yml"
-        widget: list
-        fields: # The fields for eacmh document, usually in front matter
+        fields: # The fields for each document, usually in front matter
           - {label: Name, name: title, widget: string}
           - {label: Intro, name: intro, widget: markdown}
           - label: Works
