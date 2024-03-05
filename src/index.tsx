@@ -1,8 +1,10 @@
 import { hydrate, prerender as ssr } from 'preact-iso';
-import attributes from '../data/works.yml'
+import work from '../data/works.yml'
 
 import preactLogo from './assets/preact.svg';
 import './style.css';
+
+console.log('###', work)
 
 export function App() {
 	return (
@@ -11,8 +13,6 @@ export function App() {
 				<img src={preactLogo} alt="Preact logo" height="160" width="160" />
 			</a>
 			<h1>Get Started building Vite-powered Preact Apps </h1>
-			<p>{attributes}</p>
-
 			<section>
 				<Resource
 					title="Learn Preact"
