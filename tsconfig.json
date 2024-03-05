@@ -14,7 +14,10 @@
 		"paths": {
 			"react": ["./node_modules/preact/compat/"],
 			"react-dom": ["./node_modules/preact/compat/"]
-		}
+		},
+
+		/* project config */
+		"types": ["@modyfi/vite-plugin-yaml/modules"],
 	},
 	"include": ["node_modules/vite/client.d.ts", "**/*"]
 }

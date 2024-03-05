@@ -10,13 +10,14 @@ media_library:
     publicKey: d564aaed015c7a5d0838
 
 collections:
-  - name: "work" # Used in routes, e.g., /admin/collections/blog
-    label: "Work" # Used in the UI
-    folder: "_posts/work" # The path to the folder where the documents are stored
-    create: true # Allow users to create new documents in this collection
-    slug: "{{year}}-{{month}}-{{day}}-{{slug}}" # Filename template, e.g., YYYY-MM-DD-title.md
-    fields: # The fields for each document, usually in front matter
-      - { label: "Company", name: "company", widget: "string" }
-      - { label: "Timespan", name: "timespan", widget: "string" }
-      - { label: "Title", name: "title", widget: "string" }
-      - { label: "Description", name: "description", widget: "string" }
+  - name: "data" # Used in routes, e.g., /admin/collections/blog
+    label: "data" # Used in the UI
+    files:
+      - label: "Works"
+        name: "works"
+        file: "data/works.yml"
+        fields: # The fields for each document, usually in front matter
+          - { label: "Company", name: "company", widget: "string" }
+          - { label: "Timespan", name: "timespan", widget: "string" }
+          - { label: "Title", name: "title", widget: "string" }
+          - { label: "Description", name: "description", widget: "string" }
