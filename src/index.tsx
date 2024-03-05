@@ -1,10 +1,10 @@
 import { hydrate, prerender as ssr } from 'preact-iso';
-import work from '../data/works.yml'
+import cv from '../data/cv.yml'
 
 import preactLogo from './assets/preact.svg';
 import './style.css';
 
-console.log('###', work)
+console.log('###', cv)
 
 export function App() {
 	return (

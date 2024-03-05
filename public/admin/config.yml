@@ -13,12 +13,19 @@ collections:
   - name: "data" # Used in routes, e.g., /admin/collections/blog
     label: "data" # Used in the UI
     files:
-      - label: "Works"
-        name: "works"
-        file: "data/works.yml"
+      - label: "cv"
+        name: "cv"
+        file: "data/cv.yml"
         widget: list
-        fields: # The fields for each document, usually in front matter
-          - { label: "Company", name: "company", widget: "string" }
-          - { label: "Timespan", name: "timespan", widget: "string" }
-          - { label: "Title", name: "title", widget: "string" }
-          - { label: "Description", name: "description", widget: "string" }
+        fields: # The fields for eacmh document, usually in front matter
+          - {label: Name, name: title, widget: string}
+          - {label: Intro, name: intro, widget: markdown}
+          - label: Works
+            name: work
+            widget: list
+            allow_add: true
+            fields:
+              - { label: "Company", name: "company", widget: "string" }
+              - { label: "Timespan", name: "timespan", widget: "string" }
+              - { label: "Title", name: "title", widget: "string" }
+              - { label: "Description", name: "description", widget: "string" }
